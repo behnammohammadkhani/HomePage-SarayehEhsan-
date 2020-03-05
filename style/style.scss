@@ -1,0 +1,119 @@
+
+$h1color:rgba(168, 168, 168, 0.521);
+@mixin carousel-caption {
+    color: white;
+    background-color: $h1color;
+    border-radius: 5px;
+}
+@font-face {
+    font-family: yekan;
+    src: url('../font/Yekan.ttf');
+  }
+  html{
+    header{
+      font-family: yekan;
+
+    }
+body{
+    div{
+      font-family: yekan;
+    }
+}
+}
+
+.bmk-address{
+    ul,li{
+    text-decoration: none;
+    }
+}
+
+.bmk-counter-style{
+    background-color: #f7f7f7;
+    text-align: center;
+    h5{
+    font-size: 14px;
+
+    }
+}
+.carousel-caption h1{
+    @include carousel-caption();
+    font-size: 40px;
+
+}
+
+@media(max-width:992px){
+    .carousel-caption h1{
+        @include carousel-caption();
+        font-size: 40px;
+
+    }
+
+
+}
+@media(max-width: 768px){
+    .carousel-caption h1{
+        @include carousel-caption();
+        font-size: 30px;
+
+    }
+ 
+   
+}
+@media(max-width: 576px){
+  
+    
+    .carousel-caption h1{
+        @include carousel-caption();
+        font-size: 20px;
+    }
+  
+.carousel-indidactor{
+    display: none;
+}
+
+}
+
+.carousel-item{
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease, transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+/* Style the header */
+nav {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  .sticky + body {
+    padding-top: 102px;
+  }
+  /* Style the header */
+footer{
+   
+        color: white;
+   a{
+       color: white;
+   }
+   ul,li{
+       text-decoration: none;
+   }
+  
+   h5{
+       font-weight: bold;
+   }
+}
+.card{
+    h5{
+        font-weight: bold;
+    }
+}
